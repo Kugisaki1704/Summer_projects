@@ -20,12 +20,6 @@ justify-content: space-between;
 align-items: center;
 background-color: #faaec1;
 }
-
-
-/* .header .logo{
-  height: 80px;
-} */
-
 .navbar-list{
   display: flex;
   gap: 20rem;
@@ -48,11 +42,24 @@ background-color: #faaec1;
   color: white;
 }
 
-.section-services{
-  background-color: #f3f0ff;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+  /* background img for main section */
+.main-c {
+  background-image: url("bk2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200vh; /* Adjust the height as needed */
+}
+
+.hero{
+  font-size:20px;
+  color: white;
+  padding: 50px 90px;
 }
 
 
-.section-hero p, .section-services p{
-  font-size: 3.2rem;
-}
+
