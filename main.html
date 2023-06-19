@@ -13,11 +13,11 @@
   <!-- navigation bar -->
   <header class="header">
     <nav class="navbar">
-      <ul class="navbar-list">
-        <li><a class="navbar-links" href="#">Find</a></li>
-        <li><a class="navbar-links" href="#">Menu</a></li>
-        <li><a class="navbar-links" href="#">Best Sellers</a></li>
-        <li><a class="navbar-links" href="#">Contact Us</a></li>
+      <ul class="navbar-list" id="navbar-list">
+        <li><a class="navbar-links" href="#main-c">Find</a></li>
+        <li><a class="navbar-links" href="#main-services">Menu</a></li>
+        <li><a class="navbar-links" href="#story1">Best Sellers</a></li>
+        <li><a class="navbar-links" href="#contacts">Contact Us</a></li>
         <li><a class="navbar-links" href="#">Order Now</a></li>
 
       </ul>
@@ -28,7 +28,7 @@
   <!-- main section of the page -->
   <main>
     <section class="main-c">
-      <div class="hero">
+      <div class="hero"  id="main-c">
         <h1>Special Orders, Cakes, & Weddings</h1><br>
         <div class="content">
           <p>We are delighted to fulfill orders for pastries, breads, and cakes for your<br> celebrations and special occasions. All other inquiries, including weddings<br> and special orders, can be directed to <u>pastry@borabakes</u>.</p>
@@ -46,11 +46,12 @@
     </section>
   </main>
   
+
   <br><br><br><br>
 
-  <!-- bottom section of the page -->
-  <section class="main-services">
-    <div class="menu">
+  <!--menu  -->
+  <section class="main-services"  id="main-services">
+    <div class="menu" >
       <h1 class="center-heading">Menu</h1>
       <div class="box">
 
@@ -64,18 +65,19 @@
     </div>
     </div><br>
   
-    <section class="story1">
-      <h1 class="content-heading">Our Best Sellers</h1><br><br>
+    <!-- best seller -->
+    <section class="story1" >
+      <h1 class="content-heading" id="story1">Our Best Sellers</h1><br><br>
       <div class="container">
         <div class="item">
-          <img src="cake.jpg" alt="image">
+          <img id="myiimg" src="cake.jpg" alt="image" >
           <h3>Vanilla Bean Cake</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum adipisci tempora minus?</p>
           <button>Order Now</button>
         </div>
   
         <div class="item">
-          <img src="doughnuts.jpg" alt="image">
+          <img  id="myiimg" src="doughnuts.jpg" alt="image">
           <h3>Rainbow Doughnuts</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum adipisci tempora minus?</p>
           <button>Order Now</button>
@@ -83,7 +85,7 @@
   
   
         <div class="item">
-          <img src="pastries.jpg" alt="image">
+          <img id="myiimg" src="pastries.jpg" alt="image" >
           <h3>Strawberry Cheese Pastries </h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum adipisci tempora minus?</p>
           <button>Order Now</button>
@@ -91,7 +93,7 @@
   
   
         <div class="item">
-          <img src="pancakes.jpg" alt="image">
+          <img id="myiimg" src="pancakes.jpg" alt="image" id="myiimg">
           <h3>Blueberry Pancakes</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum adipisci tempora minus?</p>
           <button>Order Now</button>
@@ -101,45 +103,35 @@
     </section>
 
   <br><br><br><br>
+
+
+  <!-- explore more -->
     
     <section class="top-picks">
-      <div class="picks">
+      <div class="picks"  id="top-picks">
         <h1 class="center-heading">Explore More</h1>
       </div>
-      <!-- <div class="photos">
-        <img src="cake.jpg">
-        <img src="cookies.jpg">
-        <img src="macrons.jpg">
-        <img src="mousecup.jpg">
-      </div>
-
-      <div class="pick-items">
-        <h5>Creamy Stripes</h5>
-        <h5>Fortune cookies</h5>
-        <h5>Vanilla Bean Macrons</h5>
-        <h5>Chocolate Mouse Cup</h5>
-      </div> -->
-
+    
       <div class="container">
         <div class="item1">
-          <img src="cake.jpg" alt="image">
+          <img id="myiimg" src="cake.jpg" alt="image">
           <h3>Creamy Stripes</h3>
         </div>
   
         <div class="item1">
-          <img src="cookies.jpg" alt="image">
+          <img id="myiimg" src="cookies.jpg" alt="image">
           <h3>Fortune Cookies</h3>
         </div>
   
   
         <div class="item1">
-          <img src="macrons.jpg" alt="image">
+          <img id="myiimg" src="macrons.jpg" alt="image">
           <h3>Vanilla Bean Macrons </h3>
         </div>
   
   
         <div class="item1">
-          <img src="mousecup.jpg" alt="image">
+          <img id="myiimg"src="mousecup.jpg" alt="image">
           <h3>Chocolate Mouse Cup</h3>
         </div>
   
@@ -147,16 +139,10 @@
   </section>
   <br><br><br><br>
 
-
-
-
-  
-
-
-
-  <footer>
-  <section class="contacts">
-    <div class="container ">
+<!-- contact us  -->
+  <footer id="contacts">
+  <section class="contacts" >
+    <div class="container " >
     <div class="contact">
       <h2>About Us</h2>
       <ul class="vlinks">
@@ -190,6 +176,9 @@
   </div>
   </section>
 </footer>
+<script src="script.js"></script>
+
+
 
 </body>
 
