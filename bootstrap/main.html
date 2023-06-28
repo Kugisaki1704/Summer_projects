@@ -1,180 +1,208 @@
 <!doctype html>
-<html data-bs-theme="dark" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<html lang="en">
 
-    <style>
-        .carousel-item{
-            height: 32rem;
-            background-color:black;
-            position: relative;
-            color: white;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-        }
-        .overlay-image{
-            position: absolute;
-             bottom: 0;
-             left: 0;
-             right: 0;
-             top:0;
-             background-position:center;
-             background-size:cover;
-             background-color: black;
-             opacity: 0.6;
-        }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Gain&Cut</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="main.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="schedule.html">Schedule</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Supplements</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            
-            </ul>
-            <button type="button" class="btn btn-outline-success mx-2">Login</button>
-            <button type="button" class="btn btn-outline-danger">Become a Member</button>
+  <style>
+    body {
+      background-color: black;
+    }
 
-          </div>
-        </div>
-      </nav>
+    .carousel-item {
+      height: 32rem;
+      background-color: black;
+      position: relative;
+      color: white;
 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    }
 
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="overlay-image" style="background-image: url(/bootstrap/images/s2.jpg);">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Strength Training</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vel eius sed?
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image" style="background-image: url(/bootstrap/images/cardio.jpg);">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Cardio</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fuga? Facere, nulla adipisci.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image" style="background-image: url(/bootstrap/images/y2.jpg);">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Yoga</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, porro!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image" style="background-image: url(/bootstrap/images/f.jpg);">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Flexibility</h5>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt quae doloribus, ab porro dignissimos!</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    .overlay-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-position: center;
+      background-size: cover;
+      background-color: black;
+      opacity: 0.6;
+    }
+
+    .caption {
+      color: white;
+    }
+    .caption1 {
+      color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top"
+    data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gain&Cut</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Supplements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+
+        </ul>
+        <button type="button" class="btn btn-outline-success mx-2">Login</button>
+        <button type="button" class="btn btn-outline-danger">Become a Member</button>
+
       </div>
+    </div>
+  </nav>
 
+  <!-- carousal  -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
 
-      <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold text-body-emphasis">Tailor Your Fitness Journey</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">We understand that every individual is unique, and that's why we offer customizable workout plans. Our interactive tools allow you to set your goals, track your progress, and adapt your routine to fit your lifestyle. Whether you want to lose weight, build muscle, increase flexibility, or simply improve your overall fitness, we're here to guide you every step of the way.
-
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay-image" style="background-image: url(/bootstrap/images/s2.jpg);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Strength Training</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vel eius sed?
           </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="schedule.html">  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started</button></a>
-            <button type="button" class="btn btn-outline-danger btn-lg px-4">Watch Demo</button>
-          </div>
         </div>
       </div>
-
-
-
-
-      
-
-
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
-          <div class="col-12 col-md">
-              <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-              <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
-          </div>
-          <div class="col-6 col-md">
-              <h5>Features</h5>
-              <ul class="list-unstyled text-small">
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
-                  </li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-              </ul>
-          </div>
-          <div class="col-6 col-md">
-              <h5>Resources</h5>
-              <ul class="list-unstyled text-small">
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-              </ul>
-          </div>
-          <div class="col-6 col-md">
-              <h5>About</h5>
-              <ul class="list-unstyled text-small">
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                  <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
-              </ul>
-          </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image: url(/bootstrap/images/cardio.jpg);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cardio</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fuga? Facere, nulla adipisci.</p>
+        </div>
       </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image: url(/bootstrap/images/y2.jpg);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Yoga</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, porro!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image: url(/bootstrap/images/f.jpg);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Flexibility</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt quae doloribus, ab porro dignissimos!
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- content  -->
+  <div class="caption">
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1>Tailor Your Fitness Journey</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">We understand that every individual is unique, and that's why we offer customizable workout
+          plans. Our interactive tools allow you to set your goals, track your progress, and adapt your routine to fit
+          your lifestyle. Whether you want to lose weight, build muscle, increase flexibility, or simply improve your
+          overall fitness, we're here to guide you every step of the way.
+
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="schedule.html"> <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get
+              Started</button></a>
+          <button type="button" class="btn btn-outline-danger btn-lg px-4">Watch Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="caption1">Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
+          </li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="caption1">Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="caption1">About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
