@@ -35,8 +35,13 @@
             align-items: center;
             padding: 100px;
         }
+
+        /* .header{
+            padding: 70px;
+        } */
     </style>
 </head>
+<!-- navbar  -->
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top"
@@ -77,78 +82,148 @@
         </div>
     </nav>
 
-    <header>
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal text-body-emphasis">Build Muscles</h1>
-                <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                    customers with this Bootstrap example. It's built with default Bootstrap components and utilities
-                    with little customization.</p>
-            </div>
-        </header>
+    <!-- headder1 -->
+    <br><br>
+    <header class="header">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Build Muscles</h1>
+            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
+                customers with this Bootstrap example. It's built with default Bootstrap components and utilities
+                with little customization.</p>
+        </div>
+    </header>
 
-        <main>
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Weightlifting</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">₹500<small
-                                    class="text-body-secondary fw-light">/session</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>₹4,000 for a package of 10 sessions </li>
-                                <li>Trainer all along the session</li>
-                                <li>Monthly Health Monitoring</li>
-                                <li>Can Hire Personal Trainer with additional cost</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-                        </div>
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Weightlifting</h4>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Powerlifting</h4>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹500<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹4,000 for a package of 10 sessions </li>
+                            <li>Trainer all along the session</li>
+                            <li>Monthly Health Monitoring</li>
+                            <li>Can Hire Personal Trainer with additional cost</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Sign up for free</button>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <main class="w-100 m-auto">
+                                            <div class="container">
+                                                <form>
+                                                    <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                                                    <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+                                                    <div class="form-floating my-1">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="Name">
+                                                        <label for="floatingInput">Enter Name</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+
+
+                                                    <div class="form-check text-start my-3">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="remember-me" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-primary w-100 py-2 my-2" type="submit">Sign
+                                                        in</button>
+                                                    <button class="btn btn-primary w-100 py-2" type="submit">Log
+                                                        in</button>
+
+                                                    <p class="mt-5 mb-3 text-body-secondary">© 2023–2024</p>
+                                                </form>
+                                            </div>
+                                        </main>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">₹650<small
-                                    class="text-body-secondary fw-light">/session</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>₹6,000 for a package of 10 sessions</li>
-                                <li>Supplements Recommendation</li>
-                                <li>Personal Trainer Access</li>
-                                <li>Weekly Health Monitoring</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                        <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Bodybuilding</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">₹750<small
-                                    class="text-body-secondary fw-light">/session</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>₹6,000 for a package of 10 sessions</li>
-                                <li>Supplement Recommendation</li>
-                                <li>Personal Trainer Access</li>
-                                <li>Regular Health Monitoring</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
-                        </div>
+                        <!-- modal end -->
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Powerlifting</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹650<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹6,000 for a package of 10 sessions</li>
+                            <li>Supplements Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Weekly Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Bodybuilding</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹750<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹6,000 for a package of 10 sessions</li>
+                            <li>Supplement Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Regular Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+    <!-- headder2 -->
 
     <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 class="display-4 fw-normal text-body-emphasis">Cardio Blast</h1>
-            <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for your potential
+            <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for
+                your potential
                 customers with this Bootstrap example. It's built with default Bootstrap components and utilities
                 with little customization.</p>
         </div>
@@ -169,7 +244,66 @@
                             <li>Monthly Health Monitoring</li>
                             <li>Can Hire Personal Trainer with additional cost</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Sign up for free</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <main class="w-100 m-auto">
+                                            <div class="container">
+                                                <form>
+                                                    <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                                                    <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+                                                    <div class="form-floating my-1">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="Name">
+                                                        <label for="floatingInput">Enter Name</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+
+
+                                                    <div class="form-check text-start my-3">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="remember-me" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-primary w-100 py-2 my-2" type="submit">Sign
+                                                        in</button>
+                                                    <button class="btn btn-primary w-100 py-2" type="submit">Log
+                                                        in</button>
+
+                                                    <p class="mt-5 mb-3 text-body-secondary">© 2023–2024</p>
+                                                </form>
+                                            </div>
+                                        </main>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -187,7 +321,8 @@
                             <li>Personal Trainer Access</li>
                             <li>Weekly Health Monitoring</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get started</button>
                     </div>
                 </div>
             </div>
@@ -205,165 +340,276 @@
                             <li>Personal Trainer Access</li>
                             <li>Regular Health Monitoring</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get Started</button>
                     </div>
                 </div>
             </div>
         </div>
-</main>
+    </main>
+
+    <!-- headder3 -->
+
+    <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Mindful Movement</h1>
+            <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for
+                your potential
+                customers with this Bootstrap example. It's built with default Bootstrap components and utilities
+                with little customization.</p>
+        </div>
+    </header>
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Hatha Yoga</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹250<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹2,000 for a package of 10 sessions </li>
+                            <li>Trainer all along the session</li>
+                            <li>Monthly Health Monitoring</li>
+                            <li>Can Hire Personal Trainer with additional cost</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Sign up for free</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <main class="w-100 m-auto">
+                                            <div class="container">
+                                                <form>
+                                                    <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                                                    <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+                                                    <div class="form-floating my-1">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="Name">
+                                                        <label for="floatingInput">Enter Name</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
 
 
+                                                    <div class="form-check text-start my-3">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="remember-me" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-primary w-100 py-2 my-2" type="submit">Sign
+                                                        in</button>
+                                                    <button class="btn btn-primary w-100 py-2" type="submit">Log
+                                                        in</button>
 
+                                                    <p class="mt-5 mb-3 text-body-secondary">© 2023–2024</p>
+                                                </form>
+                                            </div>
+                                        </main>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-
-<header>
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Mindful Movement</h1>
-        <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for your potential
-            customers with this Bootstrap example. It's built with default Bootstrap components and utilities
-            with little customization.</p>
-    </div>
-</header>
-<main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Hatha Yoga</h4>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹250<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹2,000 for a package of 10 sessions </li>
-                        <li>Trainer all along the session</li>
-                        <li>Monthly Health Monitoring</li>
-                        <li>Can Hire Personal Trainer with additional cost</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Vinyasa Yoga</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹300<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹2,500 for a package of 10 sessions</li>
+                            <li>Supplements Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Weekly Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Ashtanga Yoga</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹350<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹3,000 for a package of 10 sessions</li>
+                            <li>Supplement Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Regular Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get Started</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Vinyasa Yoga</h4>
+    </main>
+
+    <!-- headder4 -->
+    <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Stretch and Tone</h1>
+            <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for
+                your potential
+                customers with this Bootstrap example. It's built with default Bootstrap components and utilities
+                with little customization.</p>
+        </div>
+    </header>
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Stretching Sessions</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹200<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹1,800 for a package of 10 sessions </li>
+                            <li>Trainer all along the session</li>
+                            <li>Monthly Health Monitoring</li>
+                            <li>Can Hire Personal Trainer with additional cost</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Sign up for free</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <main class="w-100 m-auto">
+                                            <div class="container">
+                                                <form>
+                                                    <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                                                    <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+                                                    <div class="form-floating my-1">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="Name">
+                                                        <label for="floatingInput">Enter Name</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating my-1">
+                                                        <input type="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+
+
+                                                    <div class="form-check text-start my-3">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="remember-me" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-primary w-100 py-2 my-2" type="submit">Sign
+                                                        in</button>
+                                                    <button class="btn btn-primary w-100 py-2" type="submit">Log
+                                                        in</button>
+
+                                                    <p class="mt-5 mb-3 text-body-secondary">© 2023–2024</p>
+                                                </form>
+                                            </div>
+                                        </main>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹300<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹2,500 for a package of 10 sessions</li>
-                        <li>Supplements Recommendation</li>
-                        <li>Personal Trainer Access</li>
-                        <li>Weekly Health Monitoring</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pilates</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹400<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹3,500 for a package of 10 sessions</li>
+                            <li>Supplements Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Weekly Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Mobility Training</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₹450<small
+                                class="text-body-secondary fw-light">/session</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>₹4,000 for a package of 10 sessions</li>
+                            <li>Supplement Recommendation</li>
+                            <li>Personal Trainer Access</li>
+                            <li>Regular Health Monitoring</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Get Started</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-primary border-primary">
-                    <h4 class="my-0 fw-normal">Ashtanga Yoga</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹350<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹3,000 for a package of 10 sessions</li>
-                        <li>Supplement Recommendation</li>
-                        <li>Personal Trainer Access</li>
-                        <li>Regular Health Monitoring</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+    </main>
 
-
-
-
-
-
-
-<header>
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Stretch and Tone</h1>
-        <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for your potential
-            customers with this Bootstrap example. It's built with default Bootstrap components and utilities
-            with little customization.</p>
-    </div>
-</header>
-<main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Stretching Sessions</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹200<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹1,800 for a package of 10 sessions </li>
-                        <li>Trainer all along the session</li>
-                        <li>Monthly Health Monitoring</li>
-                        <li>Can Hire Personal Trainer with additional cost</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pilates</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹400<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹3,500 for a package of 10 sessions</li>
-                        <li>Supplements Recommendation</li>
-                        <li>Personal Trainer Access</li>
-                        <li>Weekly Health Monitoring</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-primary border-primary">
-                    <h4 class="my-0 fw-normal">Mobility Training</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">₹450<small
-                            class="text-body-secondary fw-light">/session</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>₹4,000 for a package of 10 sessions</li>
-                        <li>Supplement Recommendation</li>
-                        <li>Personal Trainer Access</li>
-                        <li>Regular Health Monitoring</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-
-
-
-
-
-
-
-
+<!-- footer  -->
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
