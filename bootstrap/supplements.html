@@ -1,0 +1,320 @@
+<!doctype html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        .carousel-item {
+            height: 32rem;
+            background-color: black;
+            position: relative;
+            color: white;
+
+        }
+
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            opacity: 0.6;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+
+        .caption {
+            margin-right: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gain&Cut</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="supplements.html">Supplements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <button type="button" class="btn btn-outline-success mx-2">Login</button>
+                <button type="button" class="btn btn-outline-danger">Become a Member</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main content for supplements-->
+    <div class="caption">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1>Recommended Supplementation</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/CRE.png" width="100%" height="100%" />
+                    </svg>
+                    <h2 class="fw-normal">Creatine</h2>
+                    <p>It can enhance muscle strength, power, and exercise performance.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRO.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Protein powder</h2>
+                    <p>Helps with muscle recovery and growth. Whey protein is popular for its fast absorption..</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRE.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Branched-Chain Amino Acids (BCAAs)</h2>
+                    <p>Aid in muscle recovery and reduce muscle soreness.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <!-- second row  -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/2WALA.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Pre-workout supplements</h2>
+                    <p>Contain ingredients like caffeine and beta-alanine that can boost energy and endurance.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRE.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Nitric oxide boosters</h2>
+                    <p>Enhance blood flow, oxygen delivery, and exercise capacity.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRO.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Omega-3 fatty acids</h2>
+                    <p>A Support cardiovascular health and may improve exercise performance.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+
+            <!-- third row  -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRO.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Magnesium</h2>
+                    <p>Can promote relaxation, muscle recovery, and reduce muscle cramps.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/CRE.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Ashwagandha</h2>
+                    <p>An adaptogenic herb that may help reduce stress and improve mental clarity.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRE.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Turmeric</h2>
+                    <p>Contains anti-inflammatory properties that can support joint health.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <!-- fourth row  -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRE.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Glucosamine and Chondroitin</h2>
+                    <p>Promote joint health and can help reduce joint pain and stiffness.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/PRO.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">MSM (Methylsulfonylmethane)</h2>
+                    <p>May assist in reducing inflammation and improving joint flexibility.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        <image href="/bootstrap/images/2WALA.png" width="100%" height="100%" />
+                    </svg>
+                    </svg>
+                    <h2 class="fw-normal">Collagen</h2>
+                    <p>Supports joint health, improves skin elasticity, and promotes the strength of tendons and
+                        ligaments.</p>
+                    <p><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+
+            <!-- footer  -->
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+                        <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled text-small">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random
+                                    feature</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team
+                                    feature</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for
+                                    developers</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled text-small">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource
+                                    name</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another
+                                    resource</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final
+                                    resource</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
