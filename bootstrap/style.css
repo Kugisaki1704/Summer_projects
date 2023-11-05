@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+  }
+  .row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 100px;
+      }
+
+  .carousel-item {
+    height: 32rem;
+    background-color: black;
+    position: relative;
+    color: white;
+
+  }
+
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  .caption {
+    color: white;
+  }
+
+  .caption1 {
+    color: lightgray;
+  }
+
+.links{
+text-decoration: none;
+color: inherit;
+}
+
+#hovercard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 0 11px rgba(227, 227, 227, 0.2);
+        }
+
+        
