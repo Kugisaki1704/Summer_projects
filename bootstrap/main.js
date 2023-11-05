@@ -1,3 +1,4 @@
+
 const cards = document.querySelectorAll('[id^="hovercard"]');
 
 cards.forEach((card) => {
@@ -18,6 +19,3 @@ cards.forEach((card) => {
     });
 });
 
-document.getElementById("register").addEventListener('click',function(){
-    alert("Account created Successfully!");
-})
