@@ -12,6 +12,12 @@
     body {
       background-color: black;
     }
+    .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
 
     .carousel-item {
       height: 32rem;
@@ -75,15 +81,17 @@
           </li>
 
         </ul>
-        <button type="button" class="btn btn-outline-success mx-2">Login</button>
-        <button type="button" class="btn btn-outline-danger">Become a Member</button>
+        <a href="login.html" class="btn btn-outline-success mx-2">Login</a>
+        <a href="register.html" class="btn btn-outline-danger">Become a Member</a>
+      
+
 
       </div>
     </div>
   </nav>
 
   <!-- carousal  -->
-  <div id="carouselExampleCaptions" class="carousel slide">
+  <div id="carouselExampleCaptions carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -97,7 +105,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="overlay-image" style="background-image: url(/bootstrap/images/s2.jpg);">
+        <div class="overlay-image" style="background-image: url(images/s2.jpg);">
         </div>
         <div class="carousel-caption d-none d-md-block">
           <h5>Strength Training</h5>
@@ -106,7 +114,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="overlay-image" style="background-image: url(/bootstrap/images/cardio.jpg);">
+        <div class="overlay-image" style="background-image: url(images/cardio.jpg);">
         </div>
         <div class="carousel-caption d-none d-md-block">
           <h5>Cardio</h5>
@@ -114,7 +122,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="overlay-image" style="background-image: url(/bootstrap/images/y2.jpg);">
+        <div class="overlay-image" style="background-image: url(images/y2.jpg);">
         </div>
         <div class="carousel-caption d-none d-md-block">
           <h5>Yoga</h5>
@@ -122,7 +130,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="overlay-image" style="background-image: url(/bootstrap/images/f.jpg);">
+        <div class="overlay-image" style="background-image: url(images/f.jpg);">
         </div>
         <div class="carousel-caption d-none d-md-block">
           <h5>Flexibility</h5>
@@ -144,7 +152,7 @@
   <!-- content  -->
   <div class="caption">
     <div class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="/images/gainandcut-removebg-preview.png" alt="" width="100" height="100">
       <h1>Tailor Your Fitness Journey</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">We understand that every individual is unique, and that's why we offer customizable workout
@@ -166,8 +174,8 @@
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-        <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+        <img class="mb-2" src="/images/gainandcut-removebg-preview.png" alt="" width="100" height="100">
+        <small class="d-block mb-3 text-body-secondary">© 2023–2025</small>
       </div>
       <div class="col-6 col-md">
         <h5 class="caption1">Features</h5>
