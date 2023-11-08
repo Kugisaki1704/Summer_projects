@@ -9,7 +9,36 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
         <link rel="stylesheet" href="style.css">
- 
+ <style>
+    @keyframes slide-in {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .row {
+        animation: slide-in 1.5s ease-in;
+    }
+    @keyframes slide-up {
+           0% {
+               opacity: 0;
+               transform: translateY(-40px);
+           }
+           100% {
+               opacity: 1;
+               transform: translateY(0);
+           }
+       }
+
+       .header {
+           animation: slide-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+       }
+ </style>
 </head>
 <!-- navbar  -->
 
@@ -17,7 +46,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top"
         data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Gain&Cut</a>
+            <a class="navbar-brand" href="#">
+                <img src="/Summer_projects/bootstrap/images/gainandcut-removebg-preview.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Gain&Cut</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -66,7 +97,7 @@
     <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card mb-4 rounded-3 shadow-sm slide-up-animation" >
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">Weightlifting</h4>
                     </div>
@@ -146,7 +177,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card mb-4 rounded-3 shadow-sm slide-up-animation">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">Powerlifting</h4>
                     </div>
@@ -165,8 +196,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-bg-primary border-primary">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary slide-up-animation">
+                    <div class="card-header py-3 text-bg-primary border-primary ">
                         <h4 class="my-0 fw-normal">Bodybuilding</h4>
                     </div>
                     <div class="card-body">
@@ -189,7 +220,7 @@
 
     <!-- headder2 -->
 
-    <header>
+    <header class="header">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 class="display-4 fw-normal text-body-emphasis">Cardio Blast</h1>
             <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for
@@ -320,7 +351,7 @@
 
     <!-- headder3 -->
 
-    <header>
+    <header class="header">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 class="display-4 fw-normal text-body-emphasis">Mindful Movement</h1>
             <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for
@@ -450,7 +481,7 @@
     </main>
 
     <!-- headder4 -->
-    <header>
+    <header class="header">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 class="display-4 fw-normal text-body-emphasis">Stretch and Tone</h1>
             <p class="fs-5 text-body-secondary">Effective exercises to boost your overall performance pricing table for

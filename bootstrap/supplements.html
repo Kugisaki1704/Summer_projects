@@ -9,6 +9,37 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 <link rel="stylesheet" href="style.css">
+<style>
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .row {
+        animation: slide-in 1.5s ease-in;
+    }
+
+    @keyframes slide-up {
+           0% {
+               opacity: 0;
+               transform: translateY(-40px);
+           }
+           100% {
+               opacity: 1;
+               transform: translateY(0);
+           }
+       }
+
+       .header {
+           animation: slide-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+       }
+</style>
 </head>
 
 <body>
@@ -16,7 +47,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark fixed-top"
         data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Gain&Cut</a>
+            <a class="navbar-brand" href="#">
+                <img src="/Summer_projects/bootstrap/images/gainandcut-removebg-preview.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Gain&Cut</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -54,7 +87,7 @@
     <!-- main content for supplements-->
     <div class="caption">
         <div class="px-4 py-5 my-5 text-center">
-            <h1>Recommended Supplementation</h1>
+            <h1 class="header">Recommended Supplementation</h1>
 
             <div class="row">
                 <div class="col-lg-4" id="hovercard">
