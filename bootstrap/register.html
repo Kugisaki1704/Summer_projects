@@ -99,6 +99,20 @@
                 align-items: center;
                 gap: 10px;
             }
+      @keyframes slide-up {
+             0% {
+                 opacity: 0;
+                 transform: translateY(-40px);
+             }
+             100% {
+                 opacity: 1;
+                 transform: translateY(0);
+             }
+         }
+  
+         .container {
+             animation: slide-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+         }
     </style>
   </head>
   <body>
