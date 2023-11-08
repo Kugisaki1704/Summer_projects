@@ -36,6 +36,66 @@
     color: inherit;
 
 }
+@keyframes slide-in-left {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slide-in-right {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+
+            }
+        100% {
+                transform: translateX(0);
+                opacity: 1;
+
+            }
+        }
+
+        .row {
+            animation: slide-in-left 1s ease-out;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .row {
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            animation: rotate 1s;
+            animation-delay: 0.5s;
+        }
+       
+        @keyframes slide-up {
+           0% {
+               opacity: 0;
+               transform: translateY(-40px);
+           }
+           100% {
+               opacity: 1;
+               transform: translateY(0);
+           }
+       }
+
+       .header {
+           animation: slide-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+       }
+
+</style>
     </style>
 </head>
 
@@ -86,7 +146,7 @@
     <div class="caption">
         <div class="px-4 py-5 my-5 text-center">
             <img class="d-block mx-auto mb-4" src="/Summer_projects/bootstrap/images/gainandcut-removebg-preview.png" alt="" width="100" height="">
-            <h1>Contact Us</h1>
+            <h1 class="header">Contact Us</h1>
             <div class="container px-4 py-5 mb-4" id="custom-cards">
 
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
