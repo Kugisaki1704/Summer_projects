@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="/Summer_projects/bootstrap/images/favicon.ico">
 
     <style>
       body{
@@ -113,6 +114,11 @@
          .container {
              animation: slide-up 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
          }
+
+         .links{
+          text-decoration: none;
+          color: white;
+         }
     </style>
   </head>
   <body>
@@ -130,12 +136,12 @@
 
       <div class="right">
         <h1 class="right-head">Register</h1>
-        <form>
-          <input type="text" placeholder="Username" class="right-form" />
-          <input type="email" placeholder="Email" class="right-form">
-          <input type="password" placeholder="Password" class="right-form" />
-          <input type="text" placeholder="Name" class="right-form">
-            <a href="login.html" class="btn btn-outline-success mx-2 right-btn" id="register">Register</a>
+        <form id="registrationForm" action="login.html" method="post">
+          <input type="text" placeholder="Username" class="right-form" required />
+          <input type="email" placeholder="Email" class="right-form" required />
+          <input type="password" placeholder="Password" class="right-form" required />
+          <input type="text" placeholder="Name" class="right-form" required />
+          <button type="submit" class="btn btn-outline-success mx-2 right-btn">Register</button>
         </form>
       </div>
     </div>
@@ -146,5 +152,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script>
+      document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Perform any registration-related actions here if needed
+
+    // Redirect to the specified URL (login.html in this case)
+    window.location.href = this.getAttribute("action");
+  });
+    </script>
   </body>
 </html>
